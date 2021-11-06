@@ -5,19 +5,28 @@ Descargamos Git de su web oficial [git-scm.com](https://git-scm.com/downloads)
 ```
 git config --list
 ```
+### Para cambiar nombre de usuario y correo electrónico en la configuracion actual
+
+```
+git config user.name "Chencho"
+git config user.email "chencho@email.com"
+```
+
 ### Para cambiar nombre de usuario y correo electrónico global
 
 ```
 git config --global user.name "Chencho"
 git config --global user.email "chencho@email.com"
 ```
-### Para cambiar nombre de usuario y correo electrónico para el repositorio actual (No cambia el global)
+
+### Saber nombre de usuario y email con el que estás
 
 ```
-git config user.name "Chencho"
-git config user.email "chencho@email.com"
+git config user.name
+git config user.email
 ```
-### Para cambiar la URL de repositorio
+
+### Para cambiar la URL del repositorio
 
 ```
 nano .git/config
