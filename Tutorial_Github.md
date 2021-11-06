@@ -17,7 +17,29 @@ git config --global user.email "chencho@email.com"
 git config user.name "Chencho"
 git config user.email "chencho@email.com"
 ```
-###
+### Para cambiar la URL de repositorio
+
+```
+nano .git/config
+```
+Le saldrá algo parecido a esto
+
+```
+[core] 
+  repositoryformatversion = 0 
+  fileMode = false bare = false 
+  logallrefupdates = true 
+  ignorecase = true 
+  precomposeunicode = true 
+[remote "origin"] 
+  url = https://github.com/chencho
+  fetch = +refs/heads/*:refs/remotes/origin/* 
+[branch "master"] 
+remote = origin merge = refs/heads/master
+[user]
+        name = Chencho
+        email = chencho@email.com
+```
 
 
 
